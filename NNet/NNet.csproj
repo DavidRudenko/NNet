@@ -46,6 +46,7 @@
     <Compile Include="ActivationFunctions\Sigmoid.cs" />
     <Compile Include="Connection.cs" />
     <Compile Include="Layers\HiddenLayer.cs" />
+    <Compile Include="LearningRules\IterativeLearningRule.cs" />
     <Compile Include="Neurons\BiasNeuron.cs" />
     <Compile Include="Neurons\HiddenNeuron.cs" />
     <Compile Include="Layers\InputLayer.cs" />
