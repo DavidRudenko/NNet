@@ -20,14 +20,6 @@ namespace NNet.Layers
                 this.Output[i] = Neurons[i].Output;
             }
         }
-
-        public virtual void Train(double lRate,double momentum=0.0)
-        {
-            foreach (var neuron in Neurons)
-            {
-                neuron.AdjustWeights(lRate,momentum);
-            }
-        }
         public virtual void ConnectForwards(Layer layer)
         {
             foreach (var neuron in Neurons)

@@ -19,16 +19,7 @@ namespace NNet.Layers
             }
         }
 
-        /// <summary>
-        /// just a stub, use Train(double[] desired,double lRate) instead
-        /// </summary>
-        /// <param name="lRate"></param>
-        public override void Train(double lRate,double momentum=0.0)
-        {
-            return;
-        }
-
-        public void Train(double[] desired, double lRate,double momentum=0.0)
+        public void Train(double[] desired, double lRate,double momentum)
         {
             for (int i = 0; i < desired.Length; i++)
             {

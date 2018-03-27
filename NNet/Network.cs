@@ -29,10 +29,10 @@ namespace NNet
         public void Train(double[]expected, double lRate, double momentum = 0.0)
         {
             var outputLayer = Layers[Layers.Count - 1] as OutputLayer;
-            outputLayer.Train(expected,lRate);
-            for (int i = Layers.Count - 1; i > 0; i--)
+            outputLayer.Train(expected,lRate,.9);
+            for (int i = Layers.Count - 2; i > 0; i--)
             {
-                Layers[i].Train(lRate,momentum);
+                (Layers[i] as HiddenLayer).Train(lRate,momentum);
             }
         }
 

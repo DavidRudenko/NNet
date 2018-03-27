@@ -18,5 +18,12 @@ namespace NNet.Layers
                 this.Neurons.Add(new HiddenNeuron());
             }
         }
+        public virtual void Train(double lRate, double momentum = 0.0)
+        {
+            foreach (var neuron in Neurons)
+            {
+                neuron.AdjustWeights(lRate, momentum);
+            }
+        }
     }
 }

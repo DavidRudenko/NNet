@@ -4,8 +4,8 @@ namespace NNet.ActivationFunctions
 {
     class Sigmoid:IActivationFunction
     {
-        private double a = 1.3;
-        private double b =1.2;
+        private double a = 1;
+        private double b =1;
         public double Calculate(double input)
         {
             return b / (1 + Math.Exp(-(a * input))) ;
