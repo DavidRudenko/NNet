@@ -1,0 +1,5 @@
+NNet/bin/**
+Nnet/obj/**
+properties/**
+packages/**
+.vs/**
